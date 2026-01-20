@@ -1,10 +1,9 @@
 ---
-name: Nginx Proxy Manager
-version: dev
-slug: nginx_proxy_manager2
-description: Manage Nginx proxy hosts with a simple, powerful interface
+name: "NGINX Proxy Manager 2"
+version: "1.0.0"
+slug: "nginx_proxy_manager2"
+description: "Manage Nginx proxy hosts with a simple, powerful interface"
 url: https://github.com/masrim2000/addon-nginx-proxy-manager2
-codenotary: codenotary@frenck.dev
 webui: http://[HOST]:[PORT:81]
 startup: services
 init: false
