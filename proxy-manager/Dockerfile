@@ -11,6 +11,13 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Copy patches
 COPY patches/*.patch /usr/src/
 
+EXPOSE 21114
+EXPOSE 21115
+EXPOSE 21116/udp
+EXPOSE 21117
+EXPOSE 21118
+EXPOSE 21119
+
 # Setup base
 ARG NGINX_PROXY_MANAGER_VERSION="v2.12.4"
 # hadolint ignore=DL3003,DL3042
