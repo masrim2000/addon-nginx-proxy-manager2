@@ -38,8 +38,9 @@ RUN \
         py3-pip=25.1.1-r0 \
         python3=3.12.12-r0 \
         yarn=1.22.22-r1 \
-    \
-    && yarn global add modclean \
+
+RUN \
+    yarn global add modclean \
     \
     && curl -J -L -o /tmp/nginxproxymanager.tar.gz \
         "https://github.com/NginxProxyManager/nginx-proxy-manager/archive/${NGINX_PROXY_MANAGER_VERSION}.tar.gz" \
@@ -47,11 +48,11 @@ RUN \
     && tar zxvf \
         /tmp/nginxproxymanager.tar.gz \
         --strip 1 -C /app \
-    \
-    && for i in /usr/src/*.patch; do \
+RUN \
+    for i in /usr/src/*.patch; do \
         patch -d /app -p 1 < "${i}"; done \
-    \
-    && cd /app/frontend \
+RUN \
+    cd /app/frontend \
     && yarn install --ignore-engines --network-timeout 100000 \
     && yarn build --ignore-engines \
     && rm -rf node_modules \
