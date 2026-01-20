@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: addon-nginx-proxy-manager2
-url: 'https://github.com/masrim2000'
+url: 'https://github.com/masrim2000/addon-nginx-proxy-manager2'
 maintainer: masrim2000 <https://github.com/masrim2000>
