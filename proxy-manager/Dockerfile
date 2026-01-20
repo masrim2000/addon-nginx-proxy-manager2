@@ -37,7 +37,7 @@ RUN \
         openssl=3.5.4-r0 \
         py3-pip=25.1.1-r0 \
         python3=3.12.12-r0 \
-        yarn=1.22.22-r1 \
+        yarn=1.22.22-r1 
 
 RUN \
     yarn global add modclean \
@@ -47,11 +47,11 @@ RUN \
     && mkdir /app \
     && tar zxvf \
         /tmp/nginxproxymanager.tar.gz \
-        --strip 1 -C /app \
+        --strip 1 -C /app 
         
 RUN \
     for i in /usr/src/*.patch; do \
-        patch -d /app -p 1 < "${i}"; done \
+        patch -d /app -p 1 < "${i}"; done 
         
 RUN \
     cd /app/frontend \
