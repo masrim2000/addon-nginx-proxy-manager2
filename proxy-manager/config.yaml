@@ -21,7 +21,7 @@ ports:
   21116/udp: 21116
   21117/tcp: 21117
   21118/tcp: 21118
-  21119:tcp: 21119
+  21119/tcp: 21119
 map:
   - addon_config:rw
 backup_exclude:
