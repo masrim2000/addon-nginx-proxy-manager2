@@ -173,14 +173,14 @@ RUN \
         python3-dev=3.12.12-r0 \
     \
     && apk add --no-cache \
-        apache2-utils=2.4.65-r0 \
+        apache2-utils=2.4.66-r0 \
         certbot=4.0.0-r0 \
         libcap=2.76-r0 \
         logrotate=3.21.0-r1 \
         nginx-mod-stream=1.28.0-r3 \
         nginx=1.28.0-r3 \
         nodejs=22.16.0-r2 \
-        npm=11.3.0-r1 \
+        npm=11.6.4-r0 \
         openssl=3.5.4-r0 \
         py3-pip=25.1.1-r0 \
         python3=3.12.12-r0 \
